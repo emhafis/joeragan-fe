@@ -15,11 +15,10 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-20 transition-all duration-300 ${
-        isScrolled
-          ? "bg-white shadow-md text-gray-900"
-          : "bg-transparent text-white"
-      }`}
+      className={`fixed top-0 left-0 w-full z-20 transition-all duration-300 ${isScrolled
+        ? "bg-white shadow-md text-gray-900"
+        : "bg-transparent text-white"
+        }`}
     >
       <div className="flex items-center justify-between py-8 px-4 lg:px-32 sm:px-10">
         {/* Logo */}
@@ -38,9 +37,8 @@ export default function Header() {
             />
           </svg>
           <h2
-            className={`text-xl font-bold tracking-tighter ${
-              isScrolled ? "text-gray-900" : "text-white"
-            }`}
+            className={`text-xl font-bold tracking-tighter ${isScrolled ? "text-gray-900" : "text-white"
+              }`}
           >
             Joeragan Properti
           </h2>
@@ -49,54 +47,40 @@ export default function Header() {
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-6">
           <a
-            className={`text-sm font-medium ${
-              isScrolled
-                ? "text-gray-900 hover:text-primary"
-                : "text-white hover:text-gray-200"
-            }`}
+            className={`text-sm font-medium ${isScrolled
+              ? "text-gray-900 hover:text-primary"
+              : "text-white hover:text-gray-200"
+              }`}
             href="#"
           >
-            Beranda
+            Home
           </a>
           <a
-            className={`text-sm font-medium ${
-              isScrolled
-                ? "text-gray-900 hover:text-primary"
-                : "text-white hover:text-gray-200"
-            }`}
+            className={`text-sm font-medium ${isScrolled
+              ? "text-gray-900 hover:text-primary"
+              : "text-white hover:text-gray-200"
+              }`}
             href="#about"
           >
-            Tentang Kami
+            About Us
           </a>
           <a
-            className={`text-sm font-medium ${
-              isScrolled
-                ? "text-gray-900 hover:text-primary"
-                : "text-white hover:text-gray-200"
-            }`}
-            href="#services"
+            className={`text-sm font-medium ${isScrolled
+              ? "text-gray-900 hover:text-primary"
+              : "text-white hover:text-gray-200"
+              }`}
+            href="#projects"
           >
-            Layanan
+            Our Projects
           </a>
           <a
-            className={`text-sm font-medium ${
-              isScrolled
-                ? "text-gray-900 hover:text-primary"
-                : "text-white hover:text-gray-200"
-            }`}
-            href="#portfolio"
-          >
-            Portofolio
-          </a>
-          <a
-            className={`text-sm font-medium ${
-              isScrolled
-                ? "text-gray-900 hover:text-primary"
-                : "text-white hover:text-gray-200"
-            }`}
+            className={`text-sm font-medium ${isScrolled
+              ? "text-gray-900 hover:text-primary"
+              : "text-white hover:text-gray-200"
+              }`}
             href="#contact"
           >
-            Kontak
+            Contact Us
           </a>
         </nav>
 
@@ -110,29 +94,21 @@ export default function Header() {
       </div>
 
       {/* Mobile Menu */}
-      {isOpen && (
-        <div
-          className={`md:hidden px-12 py-6 space-y-4 ${
-            isScrolled ? "bg-white text-gray-900" : "bg-white/50 text-gray-900"
-          }`}
-        >
-          <a className="block text-lg" href="#">
-            Beranda
-          </a>
-          <a className="block text-lg" href="#about">
-            Tentang Kami
-          </a>
-          <a className="block text-lg" href="#services">
-            Layanan
-          </a>
-          <a className="block text-lg" href="#portfolio">
-            Portofolio
-          </a>
-          <a className="block text-lg" href="#contact">
-            Kontak
-          </a>
+      <div
+        className={`
+          md:hidden overflow-hidden transition-all duration-300 ease-in-out
+          ${isOpen ? "max-h-60 opacity-100" : "max-h-0 opacity-0"}
+          ${isScrolled ? "bg-white text-gray-900" : "bg-white/70 text-gray-900 backdrop-blur"}
+        `}
+      >
+        <div className="px-12 py-6 space-y-4 text-center">
+          <a className="block text-lg hover:text-primary" href="#">Home</a>
+          <a className="block text-lg hover:text-primary" href="#about">About Us</a>
+          <a className="block text-lg hover:text-primary" href="#projects">Our Projects</a>
+          <a className="block text-lg hover:text-primary" href="#contact">Contact Us</a>
         </div>
-      )}
+      </div>
+
     </header>
   );
 }
