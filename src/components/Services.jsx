@@ -23,7 +23,7 @@ export default function Services() {
     <div id="services" className="py-16 px-4 lg:px-32 sm:px-10 lg:py-24">
         {/* Heading */}
         <div className="mb-12 flex flex-col md:flex-row md:items-center md:gap-12">
-          <h2 className="text-6xl font-extrabold text-primary">
+          <h2 className="text-4xl lg:text-6xl font-extrabold text-primary">
             Our <span className="block">Services</span>
           </h2>
           <p className="mt-4 md:mt-0 text-base sm:text-lg text-gray-700 md:pl-4 lg:pl-12">
