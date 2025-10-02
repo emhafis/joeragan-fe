@@ -24,7 +24,7 @@ export default function Services() {
         {/* Heading */}
         <div className="mb-12 flex flex-col md:flex-row md:items-center md:gap-12">
           <h2 className="text-6xl font-extrabold text-primary">
-            Our <span className="block">Service</span>
+            Our <span className="block">Services</span>
           </h2>
           <p className="mt-4 md:mt-0 text-base sm:text-lg text-gray-700 md:pl-4 lg:pl-12">
             <span className="font-bold text-primary">Joeragan Properti</span>{" "}
