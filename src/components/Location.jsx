@@ -2,8 +2,8 @@ export default function LocationSection() {
   return (
     <div className="relative w-full bg-white py-16 px-4 lg:px-32 sm:px-10 lg:py-24">
         {/* Heading */}
-        <h2 className="text-4xl lg:text-6xl font-extrabold text-primary mb-12">
-          Our <span className="block">Location</span>
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-primary mb-12 text-center">
+          Our Location
         </h2>
 
         <div className="w-full h-[400px] rounded-2xl overflow-hidden shadow-lg">

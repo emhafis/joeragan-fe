@@ -47,7 +47,7 @@ export default function Projects() {
           </div>
 
           {/* Box animasi angka + label */}
-          <div className="bg-white rounded-2xl h-64">
+          <div className="bg-white rounded-2xl h-60">
             <div className="flex flex-col items-center justify-center h-full px-4 py-6 sm:py-8">
               <h2 className="text-4xl font-extrabold text-primary mb-2">
                 <ReactTyped
