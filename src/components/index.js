@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import Services from "./Services";
 import Projects from "./Projects"
 import LocationSection from "./Location";
+import Testimonials from "./Testimonials";
 
 export {
   Header,
@@ -11,5 +12,6 @@ export {
   Footer,
   Services,
   Projects,
-  LocationSection
+  LocationSection,
+  Testimonials
 };
