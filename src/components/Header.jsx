@@ -56,18 +56,18 @@ export default function Header() {
               }`}
             to="/about"
           >
-            About Us
+            Tentang Kami
           </Link>
-          <a
+          <Link
             className={`text-sm font-medium 
               ${isScrolled || !isHome
                 ? "text-gray-900 hover:text-primary"
                 : "text-white hover:text-gray-200"
               }`}
-            href="#projects"
+            to="/projects"
           >
-            Our Projects
-          </a>
+            Proyek
+          </Link>
           <a
             className={`text-sm font-medium 
               ${isScrolled || !isHome
@@ -76,7 +76,7 @@ export default function Header() {
               }`}
             href="#contact"
           >
-            Contact Us
+            Kontak
           </a>
         </nav>
 
@@ -102,9 +102,9 @@ export default function Header() {
       >
         <div className="px-12 py-6 space-y-4 text-center">
           <Link className="block text-lg hover:text-primary" to="/">Home</Link>
-          <Link className="block text-lg hover:text-primary" to="/about">About Us</Link>
-          <Link className="block text-lg hover:text-primary" to="#projects">Our Projects</Link>
-          <Link className="block text-lg hover:text-primary" to="#contact">Contact Us</Link>
+          <Link className="block text-lg hover:text-primary" to="/about">Tentang Kami</Link>
+          <Link className="block text-lg hover:text-primary" to="/projects">Proyek</Link>
+          <Link className="block text-lg hover:text-primary" to="#contact">Kontak</Link>
         </div>
       </div>
 
