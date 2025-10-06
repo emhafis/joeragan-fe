@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { SpeedInsights } from "@vercel/speed-insights/next"
 
 import { PATHS } from './routePaths';
 import Home from '../pages/Home';
@@ -8,8 +7,6 @@ import Project from '../pages/Project';
 
 const AppRoutes = () => {
   return (
-    // BrowserRouter hanya dibutuhkan sekali di level tertinggi
-    <SpeedInsights>
       <BrowserRouter>
         <Routes>
 
@@ -19,7 +16,6 @@ const AppRoutes = () => {
 
         </Routes>
       </BrowserRouter>
-    </SpeedInsights>
   );
 };
 
