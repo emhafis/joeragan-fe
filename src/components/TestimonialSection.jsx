@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Testimonials() {
+export default function TestimonialSection() {
   const testimonials = [
     {
       name: "Udin Yang Pertama",

@@ -1,5 +1,5 @@
 // src/components/Services.jsx
-export default function Services() {
+export default function ServiceSection() {
   const services = [
     {
       title: "Joeragan Residence",

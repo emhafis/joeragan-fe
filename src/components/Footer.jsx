@@ -21,7 +21,7 @@ export default function Footer() {
         <div className="space-y-4">
           <div className="flex items-center">
             <img
-              src="/images/dummy.png"
+              src="/images/logo/main-logo.png"
               alt="Joeragan Property"
               className="h-10 sm:h-12 w-auto"
             />

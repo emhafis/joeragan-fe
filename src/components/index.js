@@ -1,17 +1,17 @@
 import Header from "./Header";
-import Hero from "./Hero";
 import Footer from "./Footer";
-import Services from "./Services";
-import Projects from "./Projects"
-import LocationSection from "./Location";
-import Testimonials from "./Testimonials";
+import HeroSection from "./HeroSection";
+import ServiceSection from "./ServiceSection";
+import ProjectSection from "./ProjectSection"
+import LocationSection from "./LocationSection";
+import TestimonialSection from "./TestimonialSection";
 
 export {
   Header,
-  Hero,
+  HeroSection,
   Footer,
-  Services,
-  Projects,
+  ServiceSection,
+  ProjectSection,
   LocationSection,
-  Testimonials
+  TestimonialSection
 };

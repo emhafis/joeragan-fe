@@ -1,7 +1,7 @@
 import { ReactTyped } from "react-typed";
 import { useState, useEffect } from "react";
 
-export default function Projects() {
+export default function ProjectSection() {
   const units = ["232+ Unit", "106+ Unit", "130+ Unit"];
   const labels = ["Joeragan Residence", "Joeragan Kosan", "Project Konstruksi"];
 

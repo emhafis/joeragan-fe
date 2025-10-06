@@ -1,4 +1,4 @@
-import { Header, Hero, Footer, Services, Projects, LocationSection, Testimonials } from "../components";
+import { Header,  Footer, HeroSection, ServiceSection, ProjectSection, LocationSection, TestimonialSection } from "../components";
 
 export default function Home() {
   return (
@@ -6,19 +6,19 @@ export default function Home() {
       <Header />
 
       <section>
-        <Hero />
+        <HeroSection />
       </section>
 
       <section>
-        <Services />
+        <ServiceSection />
       </section>
 
       <section>
-        <Projects />
+        <ProjectSection />
       </section>
 
       <section>
-        <Testimonials/>
+        <TestimonialSection/>
       </section>
 
       <section>

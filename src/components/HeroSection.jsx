@@ -1,10 +1,10 @@
-export default function Hero() {
+export default function HeroSection() {
   return (
     <div className="relative h-screen flex items-end  text-white">
       {/* Video Background */}
       <video
         className="absolute inset-0 w-full h-full object-cover"
-        src="/videos/dummy.mp4"
+        src="/videos/jumbotron-vid.mp4"
         autoPlay
         loop
         muted
@@ -22,8 +22,8 @@ export default function Hero() {
         <p className="mt-4 text-lg md:text-xl max-w-2xl">
           Pengembang, Pemasaran, dan Jasa Konstruksi Properti di Aceh
         </p>
-        <button className="mt-6 px-6 py-3 bg-primary text-white rounded-lg shadow-lg hover:bg-white hover:text-primary">
-          Lihat Layanan
+        <button className="mt-6 px-6 py-3 bg-primary text-white rounded-full shadow-lg hover:bg-white hover:text-primary border-2 border-solid border-white">
+          Scroll Down
         </button>
       </div>
     </div>
