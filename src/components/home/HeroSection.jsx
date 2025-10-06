@@ -4,7 +4,7 @@ export default function HeroSection() {
       {/* Video Background */}
       <video
         className="absolute inset-0 w-full h-full object-cover"
-        src="/videos/jumbotron-vid.mp4"
+        src="/videos/dummy.mp4"
         autoPlay
         loop
         muted
