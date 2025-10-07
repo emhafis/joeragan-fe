@@ -5,6 +5,7 @@ import ServiceSection from "./home/ServiceSection";
 import ProjectSection from "./home/ProjectSection"
 import LocationSection from "./home/LocationSection";
 import TestimonialSection from "./home/TestimonialSection";
+import ClientSection from "./home/ClientSection";
 
 export {
   Header,
@@ -13,5 +14,6 @@ export {
   ServiceSection,
   ProjectSection,
   LocationSection,
-  TestimonialSection
+  TestimonialSection,
+  ClientSection
 };
