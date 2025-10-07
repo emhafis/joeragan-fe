@@ -30,16 +30,6 @@ export default function TestimonialSection() {
   return (
     <section className="py-12 sm:py-16 lg:py-24 px-4 sm:px-8 lg:px-20">
       <div className="max-w-7xl mx-auto">
-        
-        {/* Heading */}
-        <div className="text-center mb-10 sm:mb-14">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-primary mb-2">
-            Testimonials
-          </h2>
-          <h3 className="text-base sm:text-lg lg:text-xl text-gray-700 font-medium">
-            Testimoni Nyata Dari Client yang Telah Mempercayakan Joeragan Properti
-          </h3>
-        </div>
 
         {/* Wrapper */}
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-10 items-start">
