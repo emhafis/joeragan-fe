@@ -27,14 +27,12 @@ export default function Header() {
     >
       <div className="flex items-center justify-between py-6 px-4 lg:px-32 sm:px-10">
         {/* Logo */}
-        <div className="flex items-center gap-3">
-
-          {
-            isScrolled || !isHome
-              ? <img src="/images/logo/main-logo.png" alt="Joeragan Properti" className="max-h-8 lg:max-h-12" />
-              : <img src="/images/logo/white-logo.png" alt="Joeragan Properti" className="max-h-8 lg:max-h-12" />
-          }
-        </div>
+        <div
+          className={`h-10 w-32 bg-contain bg-no-repeat transition-all duration-300 ${isScrolled || !isHome
+              ? "bg-[url('/images/logo/main-logo.png')]"
+              : "bg-[url('/images/logo/white-logo.png')]"
+            }`}
+        />
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-6">

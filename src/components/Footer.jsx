@@ -1,17 +1,14 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faEnvelope,
-  faPhone,
-  faMapMarkerAlt,
-} from "@fortawesome/free-solid-svg-icons";
-import {
-  faInstagram,
-  faFacebook,
-  faTiktok,
-} from "@fortawesome/free-brands-svg-icons";
+  Mail,
+  Phone,
+  MapPin,
+  Instagram,
+  Facebook,
+  Music2, // ganti TikTok pakai ikon netral (karena Lucide belum punya ikon TikTok)
+} from "lucide-react";
 
 export default function Footer() {
-  const iconSizeClass = "w-4 h-4";
+  const iconSize = 18;
 
   return (
     <footer className="bg-white border-t border-gray-200">
@@ -26,7 +23,7 @@ export default function Footer() {
               className="h-10 sm:h-12 w-auto"
             />
           </div>
-          <p className={`text-sm leading-relaxed text-gray-700`}>
+          <p className="text-sm leading-relaxed text-gray-700">
             <span className="font-bold text-primary">Joeragan Property</span> agensi properti
             berbasis teknologi yang kini hadir untuk membuat jual-beli dan sewa
             properti menjadi lebih mudah dengan dukungan agen yang profesional.
@@ -35,20 +32,20 @@ export default function Footer() {
 
         {/* Hubungi Kami */}
         <div>
-          <h3 className={`text-base sm:text-lg font-semibold text-primary mb-4`}>
+          <h3 className="text-base sm:text-lg font-semibold text-primary mb-4">
             Hubungi Kami
           </h3>
-          <ul className={`space-y-3 text-sm text-gray-700`}>
+          <ul className="space-y-3 text-sm text-gray-700">
             <li className="flex items-start gap-2">
-              <FontAwesomeIcon icon={faEnvelope} className={`flex-shrink-0 ${iconSizeClass} mt-1`} />
+              <Mail size={iconSize} className="flex-shrink-0 mt-1" />
               <span className="break-words">joeraganproperti.indonesia@gmail.com</span>
             </li>
             <li className="flex items-center gap-2">
-              <FontAwesomeIcon icon={faPhone} className={`flex-shrink-0 ${iconSizeClass}`} />
+              <Phone size={iconSize} className="flex-shrink-0" />
               <span>+62 823 6454 6504</span>
             </li>
             <li className="flex items-start gap-2">
-              <FontAwesomeIcon icon={faMapMarkerAlt} className={`flex-shrink-0 ${iconSizeClass} mt-1`} />
+              <MapPin size={iconSize} className="flex-shrink-0 mt-1" />
               <address className="not-italic leading-relaxed">
                 Jl. Kebun Raja, Ie Masen Kaye Adang, Kec. Syiah Kuala, Kota Banda Aceh, Aceh 23116
               </address>
@@ -58,20 +55,20 @@ export default function Footer() {
 
         {/* Ikuti Kami */}
         <div>
-          <h3 className={`text-base sm:text-lg font-semibold text-primary mb-4`}>
+          <h3 className="text-base sm:text-lg font-semibold text-primary mb-4">
             Ikuti Kami
           </h3>
-          <ul className={`space-y-3 text-sm text-gray-700`}>
+          <ul className="space-y-3 text-sm text-gray-700">
             <li className="flex items-center gap-2">
-              <FontAwesomeIcon icon={faInstagram} className={`flex-shrink-0 ${iconSizeClass}`} />
+              <Instagram size={iconSize} className="flex-shrink-0" />
               <span>Joeraganproperty.official</span>
             </li>
             <li className="flex items-center gap-2">
-              <FontAwesomeIcon icon={faFacebook} className={`flex-shrink-0 ${iconSizeClass}`} />
+              <Facebook size={iconSize} className="flex-shrink-0" />
               <span>Joeragan Property</span>
             </li>
             <li className="flex items-center gap-2">
-              <FontAwesomeIcon icon={faTiktok} className={`flex-shrink-0 ${iconSizeClass}`} />
+              <Music2 size={iconSize} className="flex-shrink-0" />
               <span>Joeragan.property</span>
             </li>
           </ul>
