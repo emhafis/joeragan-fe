@@ -1,4 +1,6 @@
 // src/components/Services.jsx
+import { motion } from "framer-motion";
+
 export default function ServiceSection() {
   const services = [
     {
@@ -26,7 +28,13 @@ export default function ServiceSection() {
   return (
     <div id="services" className="py-16 px-4 lg:px-32 sm:px-10 lg:py-24">
       {/* Heading */}
-      <div className="mb-12 flex flex-col md:flex-row md:items-center md:gap-12">
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7 }}
+        viewport={{ once: false, amount: 0.2 }}
+        className="mb-12 flex flex-col md:flex-row md:items-center md:gap-12"
+      >
         <h2 className="text-4xl lg:text-6xl font-extrabold text-primary">
           Our <span className="block">Services</span>
         </h2>
@@ -36,14 +44,18 @@ export default function ServiceSection() {
           jasa seputar properti di Aceh. Informasi dan produk layanan yang
           diberikan cukup beragam, seperti:
         </p>
-      </div>
+      </motion.div>
 
       {/* Grid Services */}
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {services.map((service, idx) => (
-          <div
+          <motion.div
             key={idx}
             className="overflow-hidden rounded-xl shadow-md group"
+            initial={{ opacity: 0, y: 60 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: idx * 0.2 }}
+            viewport={{ once: false, amount: 0.2 }}
           >
             <div className="relative h-64 lg:h-full w-full">
               <img
@@ -51,13 +63,7 @@ export default function ServiceSection() {
                 alt={service.title}
                 className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
-              {/* Overlay Gradient */}
-              {/* <div className="absolute inset-0 bg-gradient-to-t from-white/70 via-white/30 to-transparent" /> */}
-              {/* Title */}
               <div className="absolute bottom-2 lg:bottom-4 left-1/2 -translate-x-1/2 text-center">
-                {/* <p className="text-white font-bold tracking-wide">
-                    {service.title}
-                  </p> */}
                 <img
                   src={service.logo}
                   alt={service.title}
@@ -65,7 +71,7 @@ export default function ServiceSection() {
                 />
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>

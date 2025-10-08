@@ -1,4 +1,5 @@
 import mitras from "../../data/mitras";
+import { motion } from "framer-motion";
 
 export default function SponsorSection() {
   return (
@@ -6,13 +7,21 @@ export default function SponsorSection() {
       <div className="container mx-auto px-6 lg:px-32 text-center">
         {/* Heading */}
         <div className="text-center mb-10 sm:mb-14">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-primary mb-2">
-            Testimonials dan Mitra
-          </h2>
-          <p className="pt-2 md:mt-0 text-base sm:text-lg text-gray-700">
-            <span className="font-bold text-primary">
-            Testimoni </span>{" "}Nyata Dari Client yang Telah Mempercayakan Joeragan Properti
-          </p>
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7 }}
+            viewport={{ once: false, amount: 0.2 }}
+          >
+
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-primary mb-2">
+              Testimonials dan Mitra
+            </h2>
+            <p className="pt-2 md:mt-0 text-base sm:text-lg text-gray-700">
+              <span className="font-bold text-primary">
+                Testimoni </span>{" "}Nyata Dari Client yang Telah Mempercayakan Joeragan Properti
+            </p>
+          </motion.div>
         </div>
 
         {/* Carousel Logo */}
