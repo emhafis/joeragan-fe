@@ -1,36 +1,19 @@
 import { useState } from "react";
 import ProjectCard from "./ProjectCard";
 import { Plus } from "lucide-react";
+import projects from "../../data/projects";
 
 export default function ProjectGrid({ activeCategory }) {
-  const data = [
-    { kategori: "Residence", judul: "Rumah Impian Keluarga Bahagia", lokasi: "Banda Aceh", gambar: "/images/dummy.png" },
-    { kategori: "Kosan", judul: "Kosan Nyaman Mahasiswa Cerdas", lokasi: "Darussalam", gambar: "/images/dummy.png" },
-    { kategori: "Konstruksi", judul: "Pembangunan Gedung Serbaguna", lokasi: "Aceh Besar", gambar: "/images/dummy.png" },
-    { kategori: "Interior", judul: "Desain Interior Rumah Minimalis", lokasi: "Banda Aceh", gambar: "/images/dummy.png" },
-    { kategori: "Konstruksi", judul: "Renovasi Rumah Tua Jadi Modern", lokasi: "Lhokseumawe", gambar: "/images/dummy.png" },
-    { kategori: "Residence", judul: "Hunian Modern di Tengah Kota", lokasi: "Sigli", gambar: "/images/dummy.png" },
-    { kategori: "Residence", judul: "Rumah Impian Keluarga Bahagia", lokasi: "Banda Aceh", gambar: "/images/dummy.png" },
-    { kategori: "Kosan", judul: "Kosan Nyaman Mahasiswa Cerdas", lokasi: "Darussalam", gambar: "/images/dummy.png" },
-    { kategori: "Konstruksi", judul: "Pembangunan Gedung Serbaguna", lokasi: "Aceh Besar", gambar: "/images/dummy.png" },
-    { kategori: "Interior", judul: "Desain Interior Rumah Minimalis", lokasi: "Banda Aceh", gambar: "/images/dummy.png" },
-    { kategori: "Konstruksi", judul: "Renovasi Rumah Tua Jadi Modern", lokasi: "Lhokseumawe", gambar: "/images/dummy.png" },
-    { kategori: "Residence", judul: "Hunian Modern di Tengah Kota", lokasi: "Sigli", gambar: "/images/dummy.png" },
-  ];
-
   const filteredData =
     activeCategory === "Semua Proyek"
-      ? data
-      : data.filter((item) => item.kategori === activeCategory);
+      ? projects
+      : projects.filter((item) => item.kategori === activeCategory);
 
-  // 👉 jumlah awal yang ditampilkan
   const [visibleCount, setVisibleCount] = useState(8);
-
-  // data yang akan ditampilkan
   const visibleData = filteredData.slice(0, visibleCount);
 
   const handleShowMore = () => {
-    setVisibleCount((prev) => prev + 4); // tampilkan 4 item tambahan setiap klik
+    setVisibleCount((prev) => prev + 4);
   };
 
   return (
@@ -47,7 +30,6 @@ export default function ProjectGrid({ activeCategory }) {
             ))}
           </div>
 
-          {/* Tombol Show More */}
           {visibleCount < filteredData.length && (
             <div className="flex justify-center mt-10">
               <button
