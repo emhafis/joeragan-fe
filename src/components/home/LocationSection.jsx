@@ -1,6 +1,6 @@
 export default function LocationSection() {
   return (
-    <div className="relative w-full bg-white py-16 px-4 lg:px-32 sm:px-10 lg:py-24">
+    <div className="relative w-full bg-white py-8 px-4 lg:px-32 sm:px-4">
         {/* Heading */}
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-primary mb-12 text-center">
           Our Location

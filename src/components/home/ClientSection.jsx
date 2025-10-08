@@ -1,13 +1,20 @@
 export default function SponsorSection() {
   const sponsors = [
-    { src: "/images/sponsors/bi.png", alt: "Bank Indonesia" },
-    { src: "/images/sponsors/bsi.png", alt: "Bank Syariah Indonesia" },
-    { src: "/images/sponsors/btn.png", alt: "Bank BTN" },
-    { src: "/images/sponsors/bri.png", alt: "Bank BRI" },
-    { src: "/images/sponsors/mandiri.png", alt: "Bank Mandiri" },
-    { src: "/images/sponsors/pekon.png", alt: "Pekon Properti" },
-    { src: "/images/sponsors/reap.png", alt: "Reap Indonesia" },
-    { src: "/images/sponsors/pemko.png", alt: "Pemko Banda Aceh" },
+    { src: "/images/mitra/alfamart.png", alt: "Alfamart" },
+    { src: "/images/mitra/indomaret.png", alt: "Indomaret" },
+    { src: "/images/mitra/aqua-japan.png", alt: "Aqua Japan" },
+    { src: "/images/mitra/casyanata.png", alt: "Casyanata" },
+    { src: "/images/mitra/fifgroup.png", alt: "Fifgroup" },
+    { src: "/images/mitra/kabupaten-abdya.png", alt: "Mess Bupati Kab. Abdya" },
+    { src: "/images/mitra/kotty.png", alt: "Kotty" },
+    { src: "/images/mitra/ninja-xpress.png", alt: "Ninja Express" },
+    { src: "/images/mitra/polda-aceh.png", alt: "Polda Aceh" },
+    { src: "/images/mitra/progresif-grup.png", alt: "Progresif Grup" },
+    { src: "/images/mitra/rufaidah-care.png", alt: "Rufaidah Care" },
+    { src: "/images/mitra/rumah-amal-usk.png", alt: "Rumah Amal USK" },
+    { src: "/images/mitra/universitas-kopi.png", alt: "Universitas Kopi" },
+    { src: "/images/mitra/urban.png", alt: "Urban Tea House" },
+    { src: "/images/mitra/yakesma.png", alt: "Yakesma" },
   ];
 
   return (
