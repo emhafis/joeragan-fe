@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Menu, X } from "lucide-react";
 
 export default function ProjectGalleryModal({ project, onClose }) {
   const [activeTab, setActiveTab] = useState("renderan");
@@ -20,7 +21,7 @@ export default function ProjectGalleryModal({ project, onClose }) {
             onClick={onClose}
             className="text-gray-400 hover:text-primary transition-colors"
           >
-            <span className="material-symbols-outlined text-3xl">close</span>
+            <span className="material-symbols-outlined text-3xl"><X size={28} /></span>
           </button>
         </header>
 
