@@ -5,21 +5,21 @@ export default function TestimonialSection() {
     {
       name: "Udin Yang Pertama",
       source: "Google Review",
-      avatar: "/images/dummy.png",
+      avatar: "/images/avatar-dummy.jpg",
       text: "Renovasi selesai tepat waktu. Sangat solutif ketika menaikkan tinggi rumah saya yg rendah tanpa perlu bongkar atap. Pelayanan sangat bagus. Complain dilayani sampai benar benar beres. Mantap.",
       rating: 5,
     },
     {
       name: "Awalluddin",
       source: "Google Review",
-      avatar: "/images/dummy.png",
+      avatar: "/images/avatar-dummy.jpg",
       text: "Pelayanannya bagus dan ramah. Bener-bener versi anak muda. Semoga semakin baik, dan terus berkembang.",
       rating: 5,
     },
     {
       name: "Kamaruddin",
       source: "Google Review",
-      avatar: "/images/dummy.png",
+      avatar: "/images/avatar-dummy.jpg",
       text: "Pengerjaan Detail, baru tau bisa interior juga.",
       rating: 5,
     },
@@ -62,7 +62,7 @@ export default function TestimonialSection() {
           {/* Testimonial Content */}
           <div className="flex-1 bg-white rounded-2xl p-6 sm:p-8 shadow-lg">
             <img
-              src="/images/dummy.png"
+              src="/images/avatar-dummy.jpg"
               alt="Quote"
               className="w-8 h-8 sm:w-10 sm:h-10 mb-4"
             />
