@@ -26,25 +26,25 @@ export default function Contact() {
             </div>
             <form className="space-y-6">
               <div>
-                <label className="block text-sm font-medium text-gray-700" for="name">Name</label>
+                <label className="block text-sm font-medium text-gray-700" htmlFor="name">Name</label>
                 <div className="mt-1">
                   <input className="form-input py-4 px-2 w-full rounded-lg border-gray-300 bg-background-light focus:border-primary focus:ring-primary placeholder-gray-400" id="name" name="name" placeholder="Your Name" type="text" />
                 </div>
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-700" for="email">Email</label>
+                <label className="block text-sm font-medium text-gray-700" htmlFor="email">Email</label>
                 <div className="mt-1">
                   <input className="form-input py-2 px-2 w-full rounded-lg border-gray-300 bg-background-light focus:border-primary focus:ring-primary placeholder-gray-400" id="email" name="email" placeholder="your@email.com" type="email" />
                 </div>
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-700" for="phone">Phone</label>
+                <label className="block text-sm font-medium text-gray-700" htmlFor="phone">Phone</label>
                 <div className="mt-1">
                   <input className="form-input py-2 px-2 w-full rounded-lg border-gray-300 bg-background-light focus:border-primary focus:ring-primary placeholder-gray-400" id="phone" name="phone" placeholder="Your Phone Number" type="tel" />
                 </div>
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-700" for="message">Message</label>
+                <label className="block text-sm font-medium text-gray-700" htmlFor="message">Message</label>
                 <div className="mt-1">
                   <textarea className="form-textarea y-4 px-2 w-full rounded-lg border-gray-300 bg-background-light focus:border-primary focus:ring-primary placeholder-gray-400" id="message" name="message" placeholder="Your Message" rows="4"></textarea>
                 </div>
