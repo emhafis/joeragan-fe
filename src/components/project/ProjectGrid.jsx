@@ -1,9 +1,12 @@
 import { useState } from "react";
 import ProjectCard from "./ProjectCard";
+import ProjectGalleryModal from "./ProjectGalleryModal";
 import { Plus } from "lucide-react";
 import projects from "../../data/projects";
 
 export default function ProjectGrid({ activeCategory }) {
+  const [selectedProject, setSelectedProject] = useState(null);
+
   const filteredData =
     activeCategory === "Semua Proyek"
       ? projects
@@ -12,9 +15,7 @@ export default function ProjectGrid({ activeCategory }) {
   const [visibleCount, setVisibleCount] = useState(8);
   const visibleData = filteredData.slice(0, visibleCount);
 
-  const handleShowMore = () => {
-    setVisibleCount((prev) => prev + 4);
-  };
+  const handleShowMore = () => setVisibleCount((prev) => prev + 4);
 
   return (
     <section>
@@ -26,7 +27,9 @@ export default function ProjectGrid({ activeCategory }) {
         <>
           <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8">
             {visibleData.map((item, i) => (
-              <ProjectCard key={i} {...item} />
+              <div key={i} onClick={() => setSelectedProject(item)}>
+                <ProjectCard {...item} />
+              </div>
             ))}
           </div>
 
@@ -40,6 +43,13 @@ export default function ProjectGrid({ activeCategory }) {
                 Tampilkan Lebih Banyak
               </button>
             </div>
+          )}
+
+          {selectedProject && (
+            <ProjectGalleryModal
+              project={selectedProject}
+              onClose={() => setSelectedProject(null)}
+            />
           )}
         </>
       )}
