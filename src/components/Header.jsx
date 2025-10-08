@@ -66,16 +66,16 @@ export default function Header() {
           >
             Proyek
           </Link>
-          <a
+          <Link
             className={`text-sm font-medium 
               ${isScrolled || !isHome
                 ? "text-gray-900 hover:text-primary"
                 : "text-white hover:text-gray-200"
               }`}
-            href="#contact"
+            to="/contact"
           >
             Kontak
-          </a>
+          </Link>
         </nav>
 
         {/* Mobile Hamburger */}
